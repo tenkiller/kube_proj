@@ -1,0 +1,10 @@
+{application,peerage,
+             [{applications,[kernel,stdlib,elixir,logger,deferred_config]},
+              {description,"Easy clustering, pluggable discovery: via DNS (for Kubernetes, Weave, discoverd, Swarm and others), UDP multicast, or a plain list of nodes. Easy extensibility for custom Providers.\n"},
+              {modules,['Elixir.Peerage','Elixir.Peerage.Provider',
+                        'Elixir.Peerage.Server','Elixir.Peerage.Via.Dns',
+                        'Elixir.Peerage.Via.List','Elixir.Peerage.Via.Self',
+                        'Elixir.Peerage.Via.Udp']},
+              {registered,[]},
+              {vsn,"1.0.3"},
+              {mod,{'Elixir.Peerage',[]}}]}.
