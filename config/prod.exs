@@ -18,7 +18,7 @@ config :kube_proj, KubeProjWeb.Endpoint,
   url: [host: "${HOSTNAME}", port: {:system, "PORT"}],
   version: Application.spec(:myapp, :vsn)
 
-config :kube_proj, KubeProjWeb.Repo,
+config :kube_proj, KubeProj.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: "${DB_URL}",
   pool_size: 10
